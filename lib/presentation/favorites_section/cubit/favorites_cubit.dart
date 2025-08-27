@@ -1,4 +1,3 @@
-// favorites_cubit.dart
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_project/data/data_base_model/character_hive.dart';
@@ -98,8 +97,6 @@ class FavoritesCubit extends Cubit<FavoritesState> {
         item: newList.last,
       );
     }
-
-    // всё остальное — сложные изменения: пусть UI просто перестроится
     return _ListOp(type: FavoritesListOp.replace);
   }
 

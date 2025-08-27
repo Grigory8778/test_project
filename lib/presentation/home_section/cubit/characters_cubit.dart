@@ -36,7 +36,6 @@ class CharactersCubit extends Cubit<CharactersState> {
     try {
       final res = await repo.loadPage(page: nextPage);
 
-      // Обьеденяем без дублей по id (на случай, если БД возвращает весь список)
       final merged = _mergeById(state.items, res.items);
 
       emit(state.copyWith(

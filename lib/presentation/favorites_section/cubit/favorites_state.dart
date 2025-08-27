@@ -1,4 +1,3 @@
-// favorites_state.dart
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:test_project/data/data_base_model/character_hive.dart';
 
